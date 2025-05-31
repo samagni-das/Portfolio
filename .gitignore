@@ -21,4 +21,7 @@ yarn-error.log*
 
 # Editor
 .vscode
-.idea 
+.idea
+
+# Portfolio
+portfolio.zip 
