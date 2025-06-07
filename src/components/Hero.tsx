@@ -15,11 +15,12 @@ const Hero = () => {
             Hi, I'm <span className="text-blue-600">Samagni Das</span>
           </h1>
           <h2 className="text-2xl md:text-3xl text-gray-600 mb-8">
-            Senior Process Executive - Data Analyst
+            Data & AI Solutions Expert
           </h2>
           <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
-            Data whiz with a knack for storytelling! I leverage my expertise in data management, 
-            analysis, and visualization to extract meaningful insights and drive informed decisions.
+            Freelance specialist in data management, AI solutions, and process automation. 
+            I help businesses transform their data into actionable insights and build 
+            intelligent automation solutions that drive growth.
           </p>
 
           <div className="flex justify-center space-x-6 mb-12">
@@ -39,14 +40,24 @@ const Hero = () => {
             </a>
           </div>
 
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-blue-600 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors"
-            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            View My Work
-          </motion.button>
+          <div className="flex justify-center space-x-4">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-blue-600 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors"
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              View Services
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded-full font-medium hover:bg-blue-50 transition-colors"
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              See My Work
+            </motion.button>
+          </div>
         </motion.div>
       </div>
     </section>
